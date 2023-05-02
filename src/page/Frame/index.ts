@@ -1,4 +1,4 @@
-import * as Frame from './Frame';
+import { default as Frame } from './Frame';
 
 export {
   Frame

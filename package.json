@@ -11,8 +11,10 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@stein197/css-reset": "^1.1.1",
+    "i18next": "^22.4.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.2",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2"
   },

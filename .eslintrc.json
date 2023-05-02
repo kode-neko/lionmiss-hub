@@ -68,7 +68,8 @@
             "allowNullish": true
           }
         ],
-        "@typescript-eslint/explicit-function-return-type": "error"
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/no-inferrable-types": "off"
       }
     }
   ]

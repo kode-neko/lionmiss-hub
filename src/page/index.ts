@@ -1,2 +1,2 @@
-export { Frame } from './frame';
-export { Main } from './main';
+export { Frame } from './Frame';
+export { Main } from './Main';
