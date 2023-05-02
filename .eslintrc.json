@@ -2,6 +2,23 @@
   "extends": [
     "eslint:recommended"
   ],
+  "rules": {
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": false
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "always"
+    ]
+  },
   "overrides": [
     {
       "files": [
@@ -36,7 +53,7 @@
       "parser": "@typescript-eslint/parser",
       "rules": {
         "@typescript-eslint/typedef": [
-          "warn",
+          "error",
           {
             "parameter": true,
             "arrowParameter": true,
@@ -50,7 +67,8 @@
             "allowNumber": true,
             "allowNullish": true
           }
-        ]
+        ],
+        "@typescript-eslint/explicit-function-return-type": "error"
       }
     }
   ]
