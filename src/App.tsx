@@ -1,16 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import initI18n from './i18n';
-import { Frame } from './page';
+import { Outlet } from 'react-router-dom';
 
 const App: React.FC = () => {
+  const [ isLg, setIsLang ] = useState<boolean>(false);
   useEffect(() => {
     initI18n()
-      .then(()=> console.log('Languages loaded'))
+      .then(()=> setTimeout( () => setIsLang(true), 2000) )
       .catch((err: Error) => console.error(err));
   }, []);
 
   return (
-    <div><Frame /></div>
+      isLg ? (<div>
+      <div>App</div>
+      <div><Outlet /></div>
+    </div>) : <div>loading...</div>
   );
 };
 

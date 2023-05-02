@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Main: React.FC = () => {
+const Contact: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div>{t('section.main')}</div>
+    <div>{t('section.contact')}</div>
   );
 };
 
-export default Main;
+export default Contact;

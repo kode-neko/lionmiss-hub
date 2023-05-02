@@ -58,7 +58,8 @@
             "parameter": true,
             "arrowParameter": true,
             "variableDeclaration": true,
-            "memberVariableDeclaration": true
+            "memberVariableDeclaration": true,
+            "variableDeclarationIgnoreFunction": true
           }
         ],
         "@typescript-eslint/restrict-template-expressions": [
@@ -69,7 +70,8 @@
           }
         ],
         "@typescript-eslint/explicit-function-return-type": "error",
-        "@typescript-eslint/no-inferrable-types": "off"
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-misused-promises": "off"
       }
     }
   ]
