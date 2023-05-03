@@ -3,6 +3,12 @@ const langs: string[] = [
   'es'
 ];
 
+const themes: string[] = [
+  'light',
+  'dark'
+];
+
 export {
-  langs
+  langs,
+  themes
 };
