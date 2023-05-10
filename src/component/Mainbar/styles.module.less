@@ -43,6 +43,12 @@
         color: @purple;
       }
     }
+
+    @media (max-width: 700px) {
+      .mainMenu {
+        display: none
+      }
+    }
   }
 
   .right {
@@ -52,4 +58,21 @@
     gap: 2rem;
   }
 
+  .menu {
+    display: none;
+    font-size: 2rem;
+    color: @light;
+  }
+
+  @media (max-width: 700px) {
+    .secondMenu {
+      display: none
+    }
+
+    .menu {
+      display: block;
+    }
+  }
+
 }
+

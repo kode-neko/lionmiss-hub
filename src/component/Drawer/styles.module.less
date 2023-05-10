@@ -1,0 +1,65 @@
+@import '../../styles/global.less';
+
+.cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  height: 100vh;
+  width: 15rem;
+  background-color: @dark;
+}
+
+.close {
+  text-align: right;
+  padding: 1rem;
+  .cross {
+    font-size: 2rem;
+    color: @purple,
+  }
+}
+
+.delimiter {
+  height: 0.2rem;
+  width: 100%;
+  background-color: @purple;
+}
+
+.options {
+  li {
+    display: inline-block;
+    width: 100%;
+    line-height: 3rem;
+    color: @light;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: @light;
+
+    transition: color 0.3s;
+  }
+  li:hover {
+    color: @purple;
+  }
+}
+
+.menu {
+  font-size: 2rem;
+  color: @light;
+}
+
+.secondMenu {
+  font-size: 1.5rem;
+  color: @light;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  width: 100%;
+  height: 100vh;
+  background-color: @overlay;
+}
