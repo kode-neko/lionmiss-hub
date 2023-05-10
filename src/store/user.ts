@@ -3,7 +3,7 @@ import { ThemeLMH } from '../models';
 
 type UserState = {
   lang: string;
-  theme: string;
+  theme: ThemeLMH;
 }
 
 const initialState: UserState = {
