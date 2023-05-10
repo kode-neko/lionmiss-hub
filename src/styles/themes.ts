@@ -9,7 +9,9 @@ const themeStyle: Record<string, {[key: string]: string}> = {
     wrong: 'rgba(214, 75, 45, 1)',
     good: 'rgba(72, 173, 100, 1)',
     rating: 'rgba(253, 195, 45, 1)',
-    overlay: 'rgba(16, 10, 24, 0.3'
+    overlay: 'rgba(16, 10, 24, 0.3',
+    back: 'white',
+    text: 'black'
   },
   dark: {
     purple: 'rgba(160, 107, 227, 1)',
@@ -21,7 +23,9 @@ const themeStyle: Record<string, {[key: string]: string}> = {
     wrong: 'rgba(214, 75, 45, 1)',
     good: 'rgba(72, 173, 100, 1)',
     rating: 'rgba(253, 195, 45, 1)',
-    overlay: 'rgba(16, 10, 24, 0.3'
+    overlay: 'rgba(16, 10, 24, 0.3',
+    back: 'black',
+    text: 'white'
   },
 };
 

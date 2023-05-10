@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import styled from 'styled-components';
+import styled, { StyledComponent } from 'styled-components';
 import { ThemeLMH } from '../../models';
 
 const Cont = styled.div`
   padding: 10px;
-  color: ${props => props.theme === ThemeLMH.DARK ? props.theme.light : props.theme.dark};
-  background-color: ${props => props.theme === ThemeLMH.DARK ? props.theme.wrong : props.theme.good};
+  color: ${props => props.theme.text};
+  background-color: ${props => props.theme.back};
 `;
 
 const Home: React.FC = () => {
