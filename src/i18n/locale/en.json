@@ -1,0 +1,11 @@
+{
+  "title": "Lion Miss",
+  "section": {
+    "login": "Login",
+    "main": "Main",
+    "contact": "Contact"
+  },
+  "labels": {
+    "theme": "Theme"
+  }
+}
