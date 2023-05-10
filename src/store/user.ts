@@ -1,4 +1,5 @@
-import { createSlice,Slice,PayloadAction,Reducer } from '@reduxjs/toolkit';
+import { createSlice,Slice,PayloadAction,Reducer, CaseReducerActions } from '@reduxjs/toolkit';
+import { ThemeLMH } from '../models';
 
 type UserState = {
   lang: string;
@@ -7,15 +8,18 @@ type UserState = {
 
 const initialState: UserState = {
   lang: 'es',
-  theme: 'light'
+  theme: ThemeLMH.LIGHT
 };
 
 const userSlice: Slice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    changeTheme: (state: UserState, action: PayloadAction<string>) => {
-      state.theme = action.payload;
+    changeTheme: (state: UserState, { payload: theme }: PayloadAction<ThemeLMH>) => {
+      state.theme = theme;
+    },
+    changeLang: (state: UserState, { payload: lang }: PayloadAction<string>) => {
+      state.lang = lang;
     }
   }
 });
@@ -27,4 +31,8 @@ const userReducer: Reducer<UserState> = userSlice.reducer;
 export {
   userActions,
   userReducer
+};
+
+export type {
+  UserState
 };

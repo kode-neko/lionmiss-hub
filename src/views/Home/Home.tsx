@@ -1,14 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Login: React.FC = () => {
+const Home: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
-      {t('section.login')}
-    </div>
+    <div>{t('section.main')}</div>
   );
 };
 
-export default Login;
+export default Home;

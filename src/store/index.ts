@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import {
+  UserState,
   userActions,
   userReducer
 } from './user';
@@ -11,7 +12,15 @@ const store = configureStore({
   }
 });
 
-export default store;
+type AppState = {
+  user: UserState
+}
+
 export {
+  store,
   userActions
+};
+
+export type {
+  AppState
 };

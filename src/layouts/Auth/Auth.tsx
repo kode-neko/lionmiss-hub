@@ -1,12 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Main: React.FC = () => {
+const Auth: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div>{t('section.main')}</div>
+    <div>
+      {t('section.login')}
+    </div>
   );
 };
 
-export default Main;
+export default Auth;

@@ -1,11 +1,13 @@
+import { ThemeLMH } from "../models";
+
 const langs: string[] = [
   'en',
   'es'
 ];
 
 const themes: string[] = [
-  'light',
-  'dark'
+  ThemeLMH.LIGHT,
+  ThemeLMH.DARK
 ];
 
 export {
