@@ -1,4 +1,4 @@
-import { ThemeLMH } from "../models";
+import { MenuOptionLMH, ThemeLMH } from "../models";
 
 const langs: string[] = [
   'en',
@@ -10,7 +10,21 @@ const themes: string[] = [
   ThemeLMH.DARK
 ];
 
+const projectOpt: MenuOptionLMH = {
+  name: 'projects',
+  path: '/proyects'
+};
+const contactOpt: MenuOptionLMH = {
+  name: 'contact',
+  path: '/contact'
+};
+const mainMenu: MenuOptionLMH[] = [
+  projectOpt,
+  contactOpt
+];
+
 export {
   langs,
-  themes
+  themes,
+  mainMenu
 };

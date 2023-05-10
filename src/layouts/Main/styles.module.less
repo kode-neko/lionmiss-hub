@@ -1,24 +1,32 @@
+@import '../../styles/global.less';
+
 .header {
   grid-area: header;
-  background-color: orangered;
+  background-color: @dark;
 }
 .main {
   grid-area: main;
+  width: 100%;
   justify-self: center;
+  .medGradient();
+}
+
+.cont {
   width: 992px;
-  background-color: greenyellow;
+  background: none;
+  margin: 0 auto;
 }
 
 .footer {
   grid-area: footer;
-  background-color: burlywood;
+  background-color: @purple;
 }
 
 .mainCont {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 6rem 1fr 3rem;
+  grid-template-rows: auto 1fr 2.5rem;
   grid-template-areas: 
     "header header header"
     "main main main"
@@ -26,7 +34,7 @@
 }
 
 @media (max-width: 992px) {
-  .main {
+  .cont {
     width: 100%;
   }
 }

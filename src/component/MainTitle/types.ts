@@ -1,5 +1,5 @@
-type LMMainTitleProps = {
+type MainTitleProps = {
   webTitle: string;
 };
 
-export type { LMMainTitleProps };
+export type { MainTitleProps };

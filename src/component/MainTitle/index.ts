@@ -1,1 +1,1 @@
-export { default } from "./LMMainTitle";
+export { default } from "./MainTitle";

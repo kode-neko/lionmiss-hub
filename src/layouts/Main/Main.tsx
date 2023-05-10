@@ -1,13 +1,12 @@
 import React, { Dispatch } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, Outlet } from 'react-router-dom';
-import { langs, themes } from '../../config/constants';
+import { Outlet } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { userActions } from '../../store';
 import { AnyAction } from 'redux';
 import styled from 'styled-components';
 import styles from './styles.module.less';
-
+import { Footer, MainBar } from '../../component';
 
 const ContMenu = styled.div`
   background-color:
@@ -30,11 +29,11 @@ const Main: React.FC = () => {
   
   return (
     <div className={styles.mainCont}>
-      <div className={styles.header}>header</div>
+      <header className={styles.header}><MainBar webTitle={t('title')} /></header>
       <div className={styles.main}>
-        <Outlet />
+        <main className={styles.cont}><Outlet /></main>
       </div>
-      <div className={styles.footer}>footer</div>
+      <footer className={styles.footer}><Footer /></footer>
     </div>
   );
 
