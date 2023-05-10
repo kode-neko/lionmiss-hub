@@ -5,6 +5,16 @@ import { langs, themes } from '../../config/constants';
 import { useDispatch } from 'react-redux';
 import { userActions } from '../../store';
 import { AnyAction } from 'redux';
+import styled from 'styled-components';
+import styles from './styles.module.less';
+
+
+const ContMenu = styled.div`
+  background-color:
+  box-sizing: border-box;
+  display: flex;
+
+`;
 
 const Main: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -17,9 +27,20 @@ const Main: React.FC = () => {
     dispatch(userActions.changeLanguage(lg));
     await i18n.changeLanguage(lg);
   };
-
+  
   return (
-    <div>
+    <div className={styles.mainCont}>
+      <div className={styles.header}>header</div>
+      <div className={styles.main}>
+        <Outlet />
+      </div>
+      <div className={styles.footer}>footer</div>
+    </div>
+  );
+
+  /*
+  return (
+    <div style={{display: 'grid', }}>
       <br/>
       <ul>
         {themes.map((th: string) => <li key={th} onClick={(): void => handleClickTheme(th)}>{th}</li>)}
@@ -37,6 +58,7 @@ const Main: React.FC = () => {
       <div><Outlet /></div>
     </div>
   );
+  */
 };
 
 export default Main;

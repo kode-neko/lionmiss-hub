@@ -1,0 +1,32 @@
+.header {
+  grid-area: header;
+  background-color: orangered;
+}
+.main {
+  grid-area: main;
+  justify-self: center;
+  width: 992px;
+  background-color: greenyellow;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: burlywood;
+}
+
+.mainCont {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 6rem 1fr 3rem;
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+@media (max-width: 992px) {
+  .main {
+    width: 100%;
+  }
+}
