@@ -5,12 +5,13 @@ import { MenuOptionLMH } from '../../models';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import classNames from 'classnames';
 
 const Drawer: React.FC<DrawerProps> = ({ isVisible = false, menuMain, onClickClose, onClickOptMainMenu, onClickTheme, onClickLang }: DrawerProps) => {
   const { t } = useTranslation();
   return (
     <>
-      <div className={styles.cont} style={{ display: isVisible ? 'block': 'none' }}>
+      <div className={classNames([ styles.cont, isVisible ? styles.move : null ])}>
         <div className={styles.close}>
           <FontAwesomeIcon icon={faXmark} className={styles.cross} onClick={onClickClose}/>
         </div>

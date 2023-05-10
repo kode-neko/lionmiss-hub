@@ -5,10 +5,18 @@
   top: 0;
   left: 0;
   z-index: 10;
+  box-shadow: 5px 5px 5px @darkShadow;
 
   height: 100vh;
   width: 15rem;
+  margin-left: -16rem;
   background-color: @dark;
+
+  transition: margin 0.7s;
+}
+
+.move {
+  margin-left: 0;
 }
 
 .close {
@@ -32,7 +40,7 @@
     width: 100%;
     line-height: 3rem;
     color: @light;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.5rem;
     color: @light;
 
