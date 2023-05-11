@@ -1,6 +1,9 @@
 {
   "title": "Lion Miss",
   "credits": "© Lion Miss 2023 - Created by Kode Neko",
+  "msgs": {
+    "rrss": "Ps, ps... ¡Chequea mi Contenido! 😉"
+  },
   "section": {
     "projects": "Proyectos",
     "contact": "Contacto"

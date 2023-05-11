@@ -1,0 +1,83 @@
+@import '../../styles/global.less';
+
+.cont {
+  background-color: @purple;
+  border-radius: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem @darkShadow;
+  display: flex;
+  align-items: center;
+
+  .msg {
+    display: none;
+    color: @light;
+    padding: 0 1rem;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        color: @light;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.8rem;
+      }
+    }
+
+    li:hover {
+      cursor: pointer;
+      a {
+        background-color: @dark;
+      }
+    }
+
+    li:first-child, li:first-child>a {
+      border-radius: 0.2rem 0 0 0.2rem;
+    }
+
+    li:last-child, li:last-child>a {
+      border-radius: 0 0.2rem 0.2rem 0;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .cont {
+    background-color: @dark;
+    width: 100%;
+
+    border-radius: 0rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem @darkShadow;
+
+    .msg {
+      display: inline-block;
+    }
+  
+    ul {
+      li {
+        a {
+          color: @light;
+          font-size: 1.5rem;
+          padding: 0.5rem 0.8rem;
+        }
+      }
+  
+      li:hover {
+        a {
+          background-color: @purple;
+        }
+      }
+  
+      li:first-child, li:first-child>a {
+        border-radius: 0;
+      }
+  
+      li:last-child, li:last-child>a {
+        border-radius: 0;
+      }
+    }
+  
+  }
+}

@@ -1,5 +1,10 @@
 @import '../../styles/global.less';
 
+.mainCont {
+  height: 100vh;
+  position: relative;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -20,6 +25,11 @@
   padding: 7rem 1rem;
 }
 
+.social {
+  position: fixed;
+  z-index: 3;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -27,12 +37,22 @@
   background-color: @purple;
 }
 
-.mainCont {
-  height: 100vh;
+@media (min-width: 768px) {
+  .social {
+    right: 1rem;
+    top: 9rem;
+  }
 }
 
 @media (max-width: 992px) {
   .main {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .social {
+    bottom: 2.4rem;
+    right: 0;
   }
 }
