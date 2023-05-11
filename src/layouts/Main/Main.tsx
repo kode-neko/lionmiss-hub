@@ -10,8 +10,8 @@ const Main: React.FC = () => {
   return (
     <div className={styles.mainCont}>
       <header className={styles.header}><MainBar webTitle={t('title')} /></header>
-      <div className={styles.main}>
-        <main className={styles.cont}><Outlet /></main>
+      <div className={styles.cont}>
+        <main className={styles.main}><Outlet /></main>
       </div>
       <footer className={styles.footer}><Footer /></footer>
     </div>
