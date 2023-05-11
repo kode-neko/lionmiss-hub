@@ -11,7 +11,7 @@ import { Switch } from '../Switch';
 const Drawer: React.FC<DrawerProps> = ({ isVisible = false, langSW = false, themeSW = false, menuMain, onClickClose, onClickOptMainMenu, onClickTheme, onClickLang }: DrawerProps) => {
   const { t } = useTranslation();
   return (
-    <>
+    <div>
       <div className={classNames([ styles.cont, isVisible ? styles.move : null ])}>
         <div className={styles.close}>
           <FontAwesomeIcon icon={faXmark} className={styles.cross} onClick={onClickClose}/>
@@ -29,7 +29,7 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible = false, langSW = false, them
         </div>
       </div>
       <div className={styles.overlay} style={{ display: isVisible ? 'block': 'none' }}/>
-    </>
+    </div>
   );
 };
 
