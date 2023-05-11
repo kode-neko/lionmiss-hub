@@ -4,6 +4,9 @@
   "msgs": {
     "rrss": "Ps, ps... Check my Content! 😉"
   },
+  "labels": {
+    "demo": "Demo"
+  },
   "menu": {
     "projects": "Projects",
     "contact": "Contact"
@@ -15,5 +18,20 @@
   "projects": {
     "title": "Projects",
     "desc": "LionMiss is composed of a several repositories. There are been deployed severals tools to show the back and front parts."
+  },
+  "swagger": {
+    "title": "Swagger",
+    "desc": "Muestra una parte de la API REST.",
+    "demo": "https://www.kodeneko.com/lionmiss/swagger"
+  },
+  "graphql": {
+    "title": "GraphQL",
+    "desc": "Permite acceder a un editor de GraphQL.",
+    "demo": "https://www.kodeneko.com/lionmiss/graphql"
+  },
+  "storybook": {
+    "title": "Storybook",
+    "desc": "Galería de componentes front con react.",
+    "demo": "https://www.kodeneko.com/lionmiss/storybook"
   }
 }

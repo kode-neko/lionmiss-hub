@@ -4,6 +4,9 @@
   "msgs": {
     "rrss": "Ps, ps... ¡Chequea mi Contenido! 😉"
   },
+  "labels": {
+    "demo": "Demo"
+  },
   "menu": {
     "projects": "Proyectos",
     "contact": "Contacto"
@@ -15,5 +18,20 @@
   "projects": {
     "title": "Proyectos",
     "desc": "Lion Miss está compuesto de una serie de repositorios. También están desplegadas diversas herramientas para mostrar su back y front."
+  },
+  "swagger": {
+    "title": "Swagger",
+    "desc": "Muestra una parte de la API REST.",
+    "demo": "https://www.kodeneko.com/lionmiss/swagger"
+  },
+  "graphql": {
+    "title": "GraphQL",
+    "desc": "Permite acceder a un editor de GraphQL.",
+    "demo": "https://www.kodeneko.com/lionmiss/graphql"
+  },
+  "storybook": {
+    "title": "Storybook",
+    "desc": "Galería de componentes front con react.",
+    "demo": "https://www.kodeneko.com/lionmiss/storybook"
   }
 }

@@ -1,6 +1,9 @@
-import { MenuOptionLMH, ThemeLMH } from "../models";
+import { MenuOptionLMH, ProjectLMH, ThemeLMH } from "../models";
 import { faGlobe, faBolt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faTwitter, faCodepen, faFigma } from '@fortawesome/free-brands-svg-icons';
+import swaggerPic from '../assets/pics/swagger.png';
+import graphqlPic from '../assets/pics/graphql.png';
+import storybookPic from '../assets/pics/storybook.webp';
 
 const langs: string[] = [
   'en',
@@ -55,6 +58,7 @@ const socialFigma: MenuOptionLMH = {
   icon: faFigma,
   path: 'https://figma.com/@kodeneko'
 };
+
 const socialList: MenuOptionLMH[] = [
   socialPP,
   socialTwitter,
@@ -64,9 +68,34 @@ const socialList: MenuOptionLMH[] = [
   socialFigma
 ]; 
 
+const projectSwagger: ProjectLMH = {
+  title: 'swagger.title',
+  desc: 'swagger.desc',
+  img: swaggerPic,
+  demo: 'swagger.demo'
+};
+const projectGraphQL: ProjectLMH = {
+  title: 'graphql.title',
+  desc: 'graphql.desc',
+  img: graphqlPic,
+  demo: 'graphql.demo'
+};
+const projectStorybook: ProjectLMH = {
+  title: 'storybook.title',
+  desc: 'storybook.desc',
+  img: storybookPic,
+  demo: 'storybook.demo'
+};
+const projectList: ProjectLMH[] = [
+  projectSwagger,
+  projectGraphQL,
+  projectStorybook
+];
+
 export {
   langs,
   themes,
   mainMenu,
-  socialList
+  socialList,
+  projectList
 };
