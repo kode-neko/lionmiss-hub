@@ -3,11 +3,12 @@ import { DrawerProps } from './type';
 import styles from './styles.module.less';
 import { MenuOptionLMH } from '../../models';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faXmark, faGlobe, faPaintRoller } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
+import { Switch } from '../Switch';
 
-const Drawer: React.FC<DrawerProps> = ({ isVisible = false, menuMain, onClickClose, onClickOptMainMenu, onClickTheme, onClickLang }: DrawerProps) => {
+const Drawer: React.FC<DrawerProps> = ({ isVisible = false, langSW = false, themeSW = false, menuMain, onClickClose, onClickOptMainMenu, onClickTheme, onClickLang }: DrawerProps) => {
   const { t } = useTranslation();
   return (
     <>
@@ -23,8 +24,8 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible = false, menuMain, onClickClo
         </div>
         <div className={styles.delimiter} />
         <div className={styles.secondMenu} >
-          <div onClick={onClickLang}>lang</div>
-          <div onClick={onClickTheme}>tema</div>
+          <Switch icon={faGlobe} isActive={langSW} onClickSw={onClickLang} />
+          <Switch icon={faPaintRoller} isActive={themeSW} onClickSw={onClickTheme} />
         </div>
       </div>
       <div className={styles.overlay} style={{ display: isVisible ? 'block': 'none' }}/>
