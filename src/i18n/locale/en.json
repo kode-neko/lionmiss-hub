@@ -4,11 +4,16 @@
   "msgs": {
     "rrss": "Ps, ps... Check my Content! 😉"
   },
-  "section": {
+  "menu": {
     "projects": "Projects",
     "contact": "Contact"
   },
-  "labels": {
-    "theme": "Theme"
+  "welcome": {
+    "title": "Welcome!",
+    "desc": "The original idea consisted on building a clothes online shop called LionMiss. However, the project. As the project had been continuing for a lon time, it never ended. So I decied to deploy Swagger, GraphQL editor and Storybook to show some elements from the back and front. It also published all repository related to the project."
+  },
+  "projects": {
+    "title": "Projects",
+    "desc": "LionMiss is composed of a several repositories. There are been deployed severals tools to show the back and front parts."
   }
 }

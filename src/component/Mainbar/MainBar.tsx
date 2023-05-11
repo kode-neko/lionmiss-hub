@@ -51,7 +51,7 @@ const MainBar: React.FC<MainBarProps> = ({ webTitle }: MainBarProps) => {
           <div className={styles.title}><MainTitle webTitle={webTitle} /></div>
           <ul className={styles.mainMenu}>
             {mainMenu.map((o: MenuOptionLMH) => (
-              <li key={o.name}><a href={o.path}>{t(`section.${o.name}`)}</a></li>
+              <li key={o.name}><a href={o.path}>{t(`menu.${o.name}`)}</a></li>
             ))}
           </ul>
         </div>
