@@ -7,7 +7,7 @@ type UserState = {
 }
 
 const initialState: UserState = {
-  lang: 'es',
+  lang: 'en',
   theme: ThemeLMH.LIGHT
 };
 
