@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card } from '../../../component';
-import { projectList } from '../../../config/constants';
+import { projectList } from '../../../constants';
 import { Project } from '../../../component/Project';
 import { ProjectLMH } from '../../../models';
 import styles from './styles.module.less';

@@ -1,9 +1,9 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Outlet } from 'react-router-dom';
 import styles from './styles.module.less';
 import { Footer, MainBar } from '../../component';
-import { socialList } from '../../config/constants';
+import { socialList } from '../../constants';
 import { SocialCont } from '../../component/SocialCont';
 
 const Main: React.FC = () => {

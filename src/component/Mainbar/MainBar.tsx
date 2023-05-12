@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { mainMenu } from '../../config/constants';
+import { mainMenu } from '../../constants';
 import { MenuOptionLMH, ThemeLMH } from '../../models';
 import { Switch, BtnDouble } from '../../component';
 import MainTitle from '../MainTitle/MainTitle';
