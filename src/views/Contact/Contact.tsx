@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @typescript-eslint/typedef */
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import React, { useState } from 'react';
@@ -10,6 +11,7 @@ import { MsgLMH } from '../../models';
 import { useFormik } from 'formik';
 import { sendMail } from '../../api';
 import rolling from '../../assets/pics/rolling.png';
+import { toast } from 'react-toastify';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -29,9 +31,7 @@ const Contact: React.FC = () => {
       content: ''
     },
     validationSchema: msgSchema,
-    onSubmit: (values: MsgLMH): void => {
-      console.log('orly?');
-    },
+    onSubmit: (): void => {},
     
   });
 
@@ -41,8 +41,8 @@ const Contact: React.FC = () => {
         e.preventDefault();
         setIsSending(true);
         sendMail(formik.values as MsgLMH)
-          .then(() => console.log('send'))
-          .catch(() => console.log('error'))
+          .then(() => toast.success(t('contact.sucess')))
+          .catch(() => toast.error(t('contact.error')))
           .finally(() => setIsSending(false));
       }}>
         <InputLMH
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
         <div className={styles.actions} >
           <BtnLMH 
             label={isSending ? <img className={styles.rolling} src={rolling} /> : <span>{t('labels.send')}</span>}
-            disabled={(formik.dirty && !formik.isValid) || isSending}
+            disabled={!formik.dirty || (formik.dirty && !formik.isValid) || isSending}
             type='submit'
           />
         </div>
