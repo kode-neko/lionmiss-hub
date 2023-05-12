@@ -1,11 +1,37 @@
 {
   "title": "Lion Miss",
-  "section": {
-    "login": "Login",
-    "main": "Principal",
-    "contact": "Contacto"
+  "credits": "© Lion Miss 2023 - Created by Kode Neko",
+  "msgs": {
+    "rrss": "Ps, ps... ¡Chequea mi Contenido! 😉"
   },
   "labels": {
-    "theme": "Tema"
+    "demo": "Demo"
+  },
+  "menu": {
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "welcome": {
+    "title": "¡Bienvenidos!",
+    "desc": "La idea original era construir una tienda online de ropa llamada LionMiss. Pero como el proyecto se prolongo mucho en el tiempo no llegó nunca a acabarse. Así que he decidido usar Swagger, GrapQL Editor y Storybook para mostrar elementos del back y front creados. Tambiñen publico los distintos repositorios en los que está compuesto."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "desc": "Lion Miss está compuesto de una serie de repositorios. También están desplegadas diversas herramientas para mostrar su back y front."
+  },
+  "swagger": {
+    "title": "Swagger",
+    "desc": "Muestra una parte de la API REST.",
+    "demo": "https://www.kodeneko.com/lionmiss/swagger"
+  },
+  "graphql": {
+    "title": "GraphQL",
+    "desc": "Permite acceder a un editor de GraphQL.",
+    "demo": "https://www.kodeneko.com/lionmiss/graphql"
+  },
+  "storybook": {
+    "title": "Storybook",
+    "desc": "Galería de componentes front con react.",
+    "demo": "https://www.kodeneko.com/lionmiss/storybook"
   }
 }

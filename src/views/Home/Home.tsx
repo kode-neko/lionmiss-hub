@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import styled, { StyledComponent } from 'styled-components';
-import { ThemeLMH } from '../../models';
-
-const Cont = styled.div`
-  padding: 10px;
-  color: ${props => props.theme.text};
-  background-color: ${props => props.theme.back};
-`;
+import { Card } from '../../component';
+import { ProjectSection } from './sections';
+import WelcometSection from './sections/WelcomeSection';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const [ sw, setSw ] = useState<boolean>(false);
 
   return (
-    <Cont>{t('section.main')}</Cont>
+    <div>
+      <WelcometSection />
+      <ProjectSection />
+    </div>
   );
 };
 
