@@ -1,0 +1,1 @@
+export { default as BtnLMH } from './BtnLMH';
