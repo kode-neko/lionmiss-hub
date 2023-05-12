@@ -5,7 +5,25 @@
     "rrss": "Ps, ps... Check my Content! 😉"
   },
   "labels": {
-    "demo": "Demo"
+    "demo": "Demo",
+    "name": "Name",
+    "mail": "E-mail",
+    "msg": "Message",
+    "send": "Send",
+    "sending": "Enviando..."
+  },
+  "placeholder": {
+    "name": "Your username...",
+    "mail": "mail@mail.com",
+    "msg": "Offers, greetings, congratulations, critics..."
+  },
+  "hint": {
+    "required": "The field is required",
+    "mail": "The email must be valid",
+    "msg": "At least 50 characters"
+  },
+  "errors": {
+    "contact": "The message couldn't be sent. Wait a minute and try again."
   },
   "menu": {
     "projects": "Projects",
@@ -14,6 +32,11 @@
   "welcome": {
     "title": "Welcome!",
     "desc": "The original idea consisted on building a clothes online shop called LionMiss. However, the project. As the project had been continuing for a lon time, it never ended. So I decied to deploy Swagger, GraphQL editor and Storybook to show some elements from the back and front. It also published all repository related to the project."
+  },
+  "contact": {
+    "title": "Contact",
+    "success": "The message was been sent successfully",
+    "error": "The message wasn't been sent... Wait a moment and try again"
   },
   "projects": {
     "title": "Projects",

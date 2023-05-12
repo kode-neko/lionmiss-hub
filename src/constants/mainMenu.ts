@@ -2,7 +2,7 @@ import { MenuOptionLMH } from "../models";
 
 const projectOpt: MenuOptionLMH = {
   name: 'projects',
-  path: '/proyects'
+  path: '/'
 };
 const contactOpt: MenuOptionLMH = {
   name: 'contact',

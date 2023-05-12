@@ -1,0 +1,3 @@
+export {
+  sendMail
+} from './contact';

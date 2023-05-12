@@ -1,0 +1,9 @@
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+}
+
+.rolling {
+  height: 1.5rem;
+}

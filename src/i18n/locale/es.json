@@ -5,7 +5,26 @@
     "rrss": "Ps, ps... ¡Chequea mi Contenido! 😉"
   },
   "labels": {
-    "demo": "Demo"
+    "demo": "Demo",
+    "name": "Nombre",
+    "mail": "E-mail",
+    "msg": "Mensaje",
+    "send": "Enviar",
+    "sending": "Enviando..."
+  },
+  "placeholder": {
+    "name": "Nombre del usuario...",
+    "mail": "mail@mail.com",
+    "msg": "Ofertas, saludos, felicitaciones, críticas..."
+  },
+  "hint": {
+    "required": "El campo es obligatorio",
+    "mail": "El email debe ser válido",
+    "msg": "El mensaje debe de ser de al menos 30 caracteres"
+  },
+  "errors": {
+    "contact": "El mensaje no pudo ser enviado. Espere un minuto y vuélvalo a intentar.",
+    "gen": "genericooo"
   },
   "menu": {
     "projects": "Proyectos",
@@ -14,6 +33,11 @@
   "welcome": {
     "title": "¡Bienvenidos!",
     "desc": "La idea original era construir una tienda online de ropa llamada LionMiss. Pero como el proyecto se prolongo mucho en el tiempo no llegó nunca a acabarse. Así que he decidido usar Swagger, GrapQL Editor y Storybook para mostrar elementos del back y front creados. Tambiñen publico los distintos repositorios en los que está compuesto."
+  },
+  "contact": {
+    "title": "Contacto",
+    "success": "El mensaje ha sido enviado con éxito",
+    "error": "El mensaje no ha sido enviado... Espere un momento e inténtelo de nuevo"
   },
   "projects": {
     "title": "Proyectos",
