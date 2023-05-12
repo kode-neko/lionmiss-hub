@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faPaintRoller } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { Drawer } from '../Drawer';
+import { Link } from 'react-router-dom';
 
 const MainBar: React.FC<MainBarProps> = ({ webTitle }: MainBarProps) => {
   const { t, i18n } = useTranslation();
@@ -51,7 +52,7 @@ const MainBar: React.FC<MainBarProps> = ({ webTitle }: MainBarProps) => {
           <div className={styles.title}><MainTitle webTitle={webTitle} /></div>
           <ul className={styles.mainMenu}>
             {mainMenu.map((o: MenuOptionLMH) => (
-              <li key={o.name}><a href={o.path}>{t(`menu.${o.name}`)}</a></li>
+              <li key={o.name}><Link to={o.path}>{t(`menu.${o.name}`)}</Link></li>
             ))}
           </ul>
         </div>
