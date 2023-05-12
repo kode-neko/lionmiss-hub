@@ -1,0 +1,44 @@
+@import "../../styles/global.less"; 
+
+.cont {
+  display: flex;
+  gap: 1rem;
+}
+
+.imgP {
+  width: 20rem;
+
+  img {
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.desc {
+  .title {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .body {
+    margin-bottom: 1rem;
+  }
+  .demo {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.2rem;
+    background-color: @blue;
+    color: @light;
+
+    transition: background-color 0.3s;
+  }
+
+  .demo:hover{
+    background-color: @dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../../styles/global.less"; 
+
+.btn {
+  cursor: pointer;
+  border-radius: 0.2rem;
+  background-color: @blue;
+  padding: 1rem 2rem;
+  color: @light;
+  font-size: 1.2rem;
+
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: @dark;
+}
+
+.btn[disabled=disabled], .btn:disabled {
+  background-color: @purpleDarker;
+  cursor: default;
+}

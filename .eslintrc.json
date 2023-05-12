@@ -1,0 +1,78 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": false
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "always"
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+      ],
+      "env": {
+        "browser": true,
+        "es2021": true
+      },
+      "extends": [
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": [
+          "./tsconfig.json"
+        ]
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "@typescript-eslint/typedef": [
+          "error",
+          {
+            "parameter": true,
+            "arrowParameter": true,
+            "variableDeclaration": true,
+            "memberVariableDeclaration": true,
+            "variableDeclarationIgnoreFunction": true
+          }
+        ],
+        "@typescript-eslint/restrict-template-expressions": [
+          "error",
+          {
+            "allowNumber": true,
+            "allowNullish": true
+          }
+        ],
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-misused-promises": "off"
+      }
+    }
+  ]
+}

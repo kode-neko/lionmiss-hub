@@ -1,0 +1,53 @@
+@import '../../styles/global.less';
+
+.cont {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sw {
+  position: relative;
+  width: 3rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: @light;
+}
+
+.sw:hover {
+  cursor: pointer;
+}
+
+.btn {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: @dark;
+  box-sizing: border-box;
+  border: 0.2rem solid @purple;
+
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.75rem;
+
+  transform: translateX(0);
+  transition: all 0.3s;
+}
+
+.left {
+  transform: translateX(1.5rem);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: @purple;
+  z-index: 1;
+
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1rem;
+}

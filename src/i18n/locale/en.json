@@ -1,0 +1,60 @@
+{
+  "title": "Lion Miss",
+  "credits": "© Lion Miss 2023 - Created by Kode Neko",
+  "msgs": {
+    "rrss": "Ps, ps... Check my Content! 😉"
+  },
+  "labels": {
+    "demo": "Demo",
+    "name": "Name",
+    "mail": "E-mail",
+    "msg": "Message",
+    "send": "Send",
+    "sending": "Enviando..."
+  },
+  "placeholder": {
+    "name": "Your username...",
+    "mail": "mail@mail.com",
+    "msg": "Offers, greetings, congratulations, critics..."
+  },
+  "hint": {
+    "required": "The field is required",
+    "mail": "The email must be valid",
+    "msg": "At least 50 characters"
+  },
+  "errors": {
+    "contact": "The message couldn't be sent. Wait a minute and try again."
+  },
+  "menu": {
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "welcome": {
+    "title": "Welcome!",
+    "desc": "The original idea consisted on building a clothes online shop called LionMiss. However, the project. As the project had been continuing for a lon time, it never ended. So I decied to deploy Swagger, GraphQL editor and Storybook to show some elements from the back and front. It also published all repository related to the project."
+  },
+  "contact": {
+    "title": "Contact",
+    "success": "The message was been sent successfully",
+    "error": "The message wasn't been sent... Wait a moment and try again"
+  },
+  "projects": {
+    "title": "Projects",
+    "desc": "LionMiss is composed of a several repositories. There are been deployed severals tools to show the back and front parts."
+  },
+  "swagger": {
+    "title": "Swagger",
+    "desc": "Muestra una parte de la API REST.",
+    "demo": "https://www.kodeneko.com/lionmiss/swagger"
+  },
+  "graphql": {
+    "title": "GraphQL",
+    "desc": "Permite acceder a un editor de GraphQL.",
+    "demo": "https://www.kodeneko.com/lionmiss/graphql"
+  },
+  "storybook": {
+    "title": "Storybook",
+    "desc": "Galería de componentes front con react.",
+    "demo": "https://www.kodeneko.com/lionmiss/storybook"
+  }
+}
