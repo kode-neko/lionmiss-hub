@@ -1,7 +1,7 @@
 type MsgLMH = {
   name: string;
   mail: string;
-  msg: string;
+  content: string;
 }
 
 export type { MsgLMH };

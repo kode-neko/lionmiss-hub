@@ -1,8 +1,7 @@
-import { ChangeEvent, FocusEvent } from 'react';
 import styles from './styles.module.less';
 import { InputLMHProps } from './types';
 
-const InputLMH: React.FC<InputLMHProps> = ({ id, label, placeholder='', value, hint='', error='', onChange, onBlur }: InputLMHProps) => {
+const InputLMH: React.FC<InputLMHProps> = ({ id, label, placeholder='', value, hint, error, onChange, onBlur }: InputLMHProps) => {
 
   return (
     <div className={styles.cont}>

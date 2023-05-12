@@ -1,4 +1,3 @@
-import { ChangeEvent, FocusEvent } from 'react';
 import styles from './styles.module.less';
 import { TextAreaLMHProps } from './types';
 
@@ -10,12 +9,11 @@ const TextAreaLMH: React.FC<TextAreaLMHProps> = ({ id, label, placeholder, value
         className={styles.textarea} 
         id={id}
         placeholder={placeholder}
-        name={id} 
+        name={id}
         value={value} 
         onChange={onChange}
-        onBlur={onBlur}
-      >
-      </textarea>
+        onBlurCapture={onBlur}
+      />
       <div className={hint ? styles.hint : styles.wrong}>{hint ?? error}</div>
     </div>
   );

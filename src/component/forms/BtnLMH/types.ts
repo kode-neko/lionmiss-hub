@@ -1,7 +1,8 @@
 type BtnLMHProps = {
-  label: string;
+  label: JSX.Element;
+  disabled: boolean;
   type?: 'submit' | 'reset' | 'button' | undefined;
-  onClick: () => void
+  onClick?: () => void
 }
 
 export type { BtnLMHProps };

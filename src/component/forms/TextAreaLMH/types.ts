@@ -8,7 +8,7 @@ interface TextAreaLMHProps extends React.PropsWithChildren {
   hint?: string;
   error?: string; 
   onChange: (e: ChangeEvent<HTMLTextAreaElement>) => void,
-  onBlur: (e: FocusEvent<HTMLTextAreaElement, Element>) => void
+  onBlur?: (e: FocusEvent<HTMLTextAreaElement>) => void,
 }
 
 export type { TextAreaLMHProps };

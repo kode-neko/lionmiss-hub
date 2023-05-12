@@ -9,7 +9,8 @@
     "name": "Name",
     "mail": "E-mail",
     "msg": "Message",
-    "send": "Send"
+    "send": "Send",
+    "sending": "Enviando..."
   },
   "placeholder": {
     "name": "Your username...",
@@ -17,10 +18,11 @@
     "msg": "Offers, greetings, congratulations, critics..."
   },
   "hint": {
-    "email": "The email must be valid",
+    "required": "The field is required",
+    "mail": "The email must be valid",
     "mesg": "At least 50 characters"
   },
-  "error": {
+  "errors": {
     "contact": "The message couldn't be sent. Wait a minute and try again."
   },
   "menu": {

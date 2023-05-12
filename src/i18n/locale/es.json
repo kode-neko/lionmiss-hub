@@ -9,7 +9,8 @@
     "name": "Nombre",
     "mail": "E-mail",
     "msg": "Mensaje",
-    "send": "Enviar"
+    "send": "Enviar",
+    "sending": "Enviando..."
   },
   "placeholder": {
     "name": "Nombre del usuario...",
@@ -17,11 +18,13 @@
     "msg": "Ofertas, saludos, felicitaciones, críticas..."
   },
   "hint": {
-    "email": "El email debe ser válido",
-    "mesg": "El mensaje debe de ser de al menos 50 caracteres"
+    "required": "El campo es obligatorio",
+    "mail": "El email debe ser válido",
+    "msg": "El mensaje debe de ser de al menos 50 caracteres"
   },
-  "error": {
-    "contact": "El mensaje no pudo ser enviado. Espere un minuto y vuélvalo a intentar."
+  "errors": {
+    "contact": "El mensaje no pudo ser enviado. Espere un minuto y vuélvalo a intentar.",
+    "gen": "genericooo"
   },
   "menu": {
     "projects": "Proyectos",
