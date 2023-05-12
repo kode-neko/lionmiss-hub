@@ -1,6 +1,7 @@
 type BtnLMHProps = {
   label: string;
-  onClick: (value:string) => void
+  type?: 'submit' | 'reset' | 'button' | undefined;
+  onClick: () => void
 }
 
 export type { BtnLMHProps };

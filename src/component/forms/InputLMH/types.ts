@@ -1,3 +1,5 @@
+import { ChangeEvent, FocusEvent } from "react";
+
 type InputLMHProps = {
   id: string;
   label: string;
@@ -5,8 +7,8 @@ type InputLMHProps = {
   value: string,
   hint?: string;
   error?: string; 
-  onChange: (value: string) => void,
-  onBlur: (value:string) => void
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void,
+  onBlur: (e: FocusEvent<HTMLInputElement, Element>) => void
 }
 
 export type { InputLMHProps };

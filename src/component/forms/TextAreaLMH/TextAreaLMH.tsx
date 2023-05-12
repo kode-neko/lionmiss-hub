@@ -3,10 +3,6 @@ import styles from './styles.module.less';
 import { TextAreaLMHProps } from './types';
 
 const TextAreaLMH: React.FC<TextAreaLMHProps> = ({ id, label, placeholder, value, hint, error, onChange, onBlur }: TextAreaLMHProps) => {
-
-  const handlerOnChange = (e: ChangeEvent<HTMLTextAreaElement>): void => onChange(e.target.value);
-  const handlerOnBlur = (e: FocusEvent<HTMLTextAreaElement, Element>): void => onBlur(e.target.value);
-
   return (
     <div className={styles.cont}>
       <label className={styles.label} htmlFor={id}>{label}</label>
@@ -16,8 +12,8 @@ const TextAreaLMH: React.FC<TextAreaLMHProps> = ({ id, label, placeholder, value
         placeholder={placeholder}
         name={id} 
         value={value} 
-        onChange={handlerOnChange}
-        onBlur={handlerOnBlur}
+        onChange={onChange}
+        onBlur={onBlur}
       >
       </textarea>
       <div className={hint ? styles.hint : styles.wrong}>{hint ?? error}</div>

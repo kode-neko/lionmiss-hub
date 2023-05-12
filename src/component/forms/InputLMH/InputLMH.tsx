@@ -4,9 +4,6 @@ import { InputLMHProps } from './types';
 
 const InputLMH: React.FC<InputLMHProps> = ({ id, label, placeholder='', value, hint='', error='', onChange, onBlur }: InputLMHProps) => {
 
-  const handlerOnChange = (e: ChangeEvent<HTMLInputElement>): void => onChange(e.target.value);
-  const handlerOnBlur = (e: FocusEvent<HTMLInputElement, Element>): void => onBlur(e.target.value);
-
   return (
     <div className={styles.cont}>
       <label className={styles.label} htmlFor={id}>{label}</label>
@@ -17,8 +14,8 @@ const InputLMH: React.FC<InputLMHProps> = ({ id, label, placeholder='', value, h
         name={id} 
         type="text" 
         value={value} 
-        onChange={handlerOnChange}
-        onBlur={handlerOnBlur}
+        onChange={onChange}
+        onBlur={onBlur}
       />
       <div className={hint ? styles.hint : styles.wrong}>{hint ?? error}</div>
     </div>

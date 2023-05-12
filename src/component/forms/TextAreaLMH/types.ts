@@ -1,3 +1,5 @@
+import { ChangeEvent, FocusEvent } from "react";
+
 interface TextAreaLMHProps extends React.PropsWithChildren {
   id: string;
   label: string;
@@ -5,8 +7,8 @@ interface TextAreaLMHProps extends React.PropsWithChildren {
   value: string,
   hint?: string;
   error?: string; 
-  onChange: (value: string) => void,
-  onBlur: (value:string) => void
+  onChange: (e: ChangeEvent<HTMLTextAreaElement>) => void,
+  onBlur: (e: FocusEvent<HTMLTextAreaElement, Element>) => void
 }
 
 export type { TextAreaLMHProps };
