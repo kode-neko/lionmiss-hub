@@ -14,15 +14,17 @@ import './styles/global.less';
 
 const App: React.FC = () => {
   const theme: ThemeLMH = useSelector((state: AppState) => state.user.theme);
+  const { VITE_BASE_URL } = import.meta.env;
+  const createPath = (path: string): string => `${VITE_BASE_URL as string}${path}`;
 
   return (
     <ThemeProvider theme={themeStyle[theme]}>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Auth />} />
-          <Route path="/" element={<Main />}>
+          <Route path={createPath('login')} element={<Auth />} />
+          <Route path={createPath('')} element={<Main />}>
             <Route index element={<Home />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
+            <Route path={createPath('contact')} element={<Contact />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Route>
         </Routes>
