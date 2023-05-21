@@ -8,14 +8,13 @@ import { themeStyle } from './styles/themes';
 import { Auth, Main } from './layouts';
 import { Contact, Home } from './views';
 import { Error } from './views/Error';
+import { createPath } from './helper';
 import './i18n';
 import "the-new-css-reset/css/reset.css";
 import './styles/global.less';
 
 const App: React.FC = () => {
   const theme: ThemeLMH = useSelector((state: AppState) => state.user.theme);
-  const { VITE_BASE_URL } = import.meta.env;
-  const createPath = (path: string): string => `${VITE_BASE_URL as string}${path}`;
 
   return (
     <ThemeProvider theme={themeStyle[theme]}>
