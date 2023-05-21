@@ -57,5 +57,9 @@
     "title": "Storybook",
     "desc": "Galería de componentes front con react.",
     "demo": "https://www.kodeneko.com/lionmiss/storybook"
+  },
+  "error": {
+    "title": "Upsss... no encontrado",
+    "content": "No se encontró la sección. Es bastante probable que la dirección URL no sea correcta. Para evitar esta situación usa la URL principal ({{- page}}) o el menú de arriba."
   }
 }
