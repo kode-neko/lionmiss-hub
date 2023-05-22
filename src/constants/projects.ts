@@ -13,7 +13,7 @@ const projectGraphQL: ProjectLMH = {
   title: 'graphql.title',
   desc: 'graphql.desc',
   img: graphqlPic,
-  demo: 'https://www.kodeneko.com/lionmiss/gql-sandbox'
+  demo: '/gql-sandbox'
 };
 const projectStorybook: ProjectLMH = {
   title: 'storybook.title',

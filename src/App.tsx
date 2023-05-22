@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Routes>
           <Route path={createPath('login')} element={<Auth />} />
-          <Route path={createPath('gql')} element={<SandboxGQL />} />
+          <Route path={createPath('gql-sandbox')} element={<SandboxGQL />} />
           <Route path={createPath('')} element={<Main />}>
             <Route index element={<Home />}></Route>
             <Route path="contact" element={<Contact />}></Route>
