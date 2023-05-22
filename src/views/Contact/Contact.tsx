@@ -32,7 +32,6 @@ const Contact: React.FC = () => {
     },
     validationSchema: msgSchema,
     onSubmit: (): void => {},
-    
   });
 
   return (

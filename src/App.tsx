@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { AppState } from './store';
 import { ThemeLMH } from './models';
 import { themeStyle } from './styles/themes';
-import { Auth, Main } from './layouts';
+import { Auth, Main, SandboxGQL } from './layouts';
 import { Contact, Home } from './views';
 import { Error } from './views/Error';
 import { createPath } from './helper';
@@ -21,9 +21,10 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Routes>
           <Route path={createPath('login')} element={<Auth />} />
+          <Route path={createPath('gql')} element={<SandboxGQL />} />
           <Route path={createPath('')} element={<Main />}>
             <Route index element={<Home />}></Route>
-            <Route path={createPath('contact')} element={<Contact />}></Route>
+            <Route path="contact" element={<Contact />}></Route>
             <Route path="*" element={<Error />}></Route>
           </Route>
         </Routes>
