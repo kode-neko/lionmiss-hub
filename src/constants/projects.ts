@@ -7,19 +7,19 @@ const projectSwagger: ProjectLMH = {
   title: 'swagger.title',
   desc: 'swagger.desc',
   img: swaggerPic,
-  demo: 'swagger.demo'
+  demo: 'https://www.kodeneko.com/lionmiss/docs'
 };
 const projectGraphQL: ProjectLMH = {
   title: 'graphql.title',
   desc: 'graphql.desc',
   img: graphqlPic,
-  demo: 'graphql.demo'
+  demo: 'https://www.kodeneko.com/lionmiss/gql-sandbox'
 };
 const projectStorybook: ProjectLMH = {
   title: 'storybook.title',
   desc: 'storybook.desc',
   img: storybookPic,
-  demo: 'storybook.demo'
+  demo: 'https://www.kodeneko.com/lionmiss/components'
 };
 const projectList: ProjectLMH[] = [
   projectSwagger,
