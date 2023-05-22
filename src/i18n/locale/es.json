@@ -45,18 +45,15 @@
   },
   "swagger": {
     "title": "Swagger",
-    "desc": "Muestra una parte de la API REST.",
-    "demo": "https://www.kodeneko.com/lionmiss/swagger"
+    "desc": "Muestra una parte de la API REST."
   },
   "graphql": {
     "title": "GraphQL",
-    "desc": "Permite acceder a un editor de GraphQL.",
-    "demo": "https://www.kodeneko.com/lionmiss/graphql"
+    "desc": "Permite acceder a un editor de GraphQL."
   },
   "storybook": {
     "title": "Storybook",
-    "desc": "Galería de componentes front con react.",
-    "demo": "https://www.kodeneko.com/lionmiss/storybook"
+    "desc": "Galería de componentes front con react."
   },
   "error": {
     "title": "Upsss... no encontrado",
