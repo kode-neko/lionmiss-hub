@@ -1,7 +1,7 @@
 import { ProjectLMH } from "../models";
 import swaggerPic from '../assets/pics/swagger.png';
 import graphqlPic from '../assets/pics/graphql.png';
-import storybookPic from '../assets/pics/storybook.webp';
+import storybookPic from '../assets/pics/storybook.png';
 
 const projectSwagger: ProjectLMH = {
   title: 'swagger.title',
