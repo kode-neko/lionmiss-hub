@@ -2,6 +2,7 @@ import { ProjectLMH } from "../models";
 import swaggerPic from '../assets/pics/swagger.png';
 import graphqlPic from '../assets/pics/graphql.png';
 import storybookPic from '../assets/pics/storybook.png';
+import { createPath } from "../helper";
 
 const projectSwagger: ProjectLMH = {
   title: 'swagger.title',
@@ -13,7 +14,7 @@ const projectGraphQL: ProjectLMH = {
   title: 'graphql.title',
   desc: 'graphql.desc',
   img: graphqlPic,
-  demo: '/gql-sandbox'
+  demo: createPath('gql-sandbox')
 };
 const projectStorybook: ProjectLMH = {
   title: 'storybook.title',
